@@ -9,7 +9,7 @@ import argparse
 
 def main():
     load_dotenv()
-    nasa_api_key = os.getenv('NASA_API_KAY')
+    nasa_api_key = os.getenv('NASA_API_KEY')
 
     parser = argparse.ArgumentParser(description="Данный файл скачивает картинки с сервиcа APOD NASA")
     parser.add_argument('--count', 
