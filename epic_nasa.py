@@ -11,11 +11,7 @@ def main():
     nasa_api_key = os.getenv('NASA_API_KEY')
 
     parser = argparse.ArgumentParser(description="Данный файл скачивает картинки с сервиcа APOD NASA")
-    parser.add_argument('--folder', 
-                          type=str, 
-                          default='images', 
-                          help='Введите название папки'
-                        )
+    parser.add_argument('--folder', type=str, default='images', help='Введите название папки')
 
     args = parser.parse_args()
     folder = args.folder
