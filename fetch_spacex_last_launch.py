@@ -10,7 +10,7 @@ def main():
     parser.add_argument('--launch', type=str, default='5eb87d42ffd86e000604b384', help='Введите айди запуска')
     args = parser.parse_args()
     folder = args.folder
-    launch_id = args.folder
+    launch_id = args.launch
     url = f'https://api.spacexdata.com/v5/launches/{launch_id}'
     response = requests.get(url)
     response.raise_for_status()
