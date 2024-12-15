@@ -8,7 +8,7 @@ def main():
     parser = argparse.ArgumentParser(description="Данный файл скачивает картинки с сервиcа APOD NASA")
     parser.add_argument('--folder', type=str, default='images', help='Введите название папки')
     parser.add_argument('--launch', type=str, default='5eb87d42ffd86e000604b384', help='Введите айди запуска')
-    args = parser.parse_args
+    args = parser.parse_args()
     folder = args.folder
     launch_id = args.folder
     url = f'https://api.spacexdata.com/v5/launches/{launch_id}'
